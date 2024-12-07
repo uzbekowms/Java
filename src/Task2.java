@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Task2 {
     // Dijkstra's algorithm to find the shortest path between start and end nodes
-    static int dijkstra(Map<Integer, List<Edge>> graph, int start, int end, int n) {
+     public static int dijkstra(Map<Integer, List<Edge>> graph, int start, int end, int n) {
         // PriorityQueue to store and process nodes based on the cost (ascending order)
         PriorityQueue<int[]> pq = new PriorityQueue<>(Comparator.comparingInt(a -> a[0]));
         pq.add(new int[]{0, start}); // Initial node with cost 0
